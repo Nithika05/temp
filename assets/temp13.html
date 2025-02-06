@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <center>
+    <div id="box">
+        <p>
+            <input type="email" id="em" placeholder="Email address or phone number" required>
+        </p>
+        <p><input type="password" id="pass" placeholder="Password" required></p>
+        <p>
+            <button onclick="fun()">Log in</button>
+        </p>
+    </div>
+    </center>
+
+    <script>
+        function fun(){
+        let passw=confirm("confirm password");
+        if(passw==true){
+            document.write("welcome");
+        }
+        else{
+            document.write("access denied");
+        }
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+div{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px; 
+    box-shadow: 1px 1px;
+    height: 150px;
+    width: 300px;
+    padding: 10px;
+}
+
+#em{
+    width: 90%;
+    height: 25px;
+}
+
+#pass{
+    width: 90%;
+    height: 25px;
+}
+
+button{
+    width: 90%;
+    height: 25px;
+    background-color: rgb(71, 71, 202);
+    color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+body{
+    margin: 200px;
+}

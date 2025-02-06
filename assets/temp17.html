@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div id="box">
+            <h1>New User Signup Form</h1>
+            <p>
+                <input type="text" id="name" placeholder="Enter Name">
+            </p>
+            <p>
+                <input type="text" id="em" placeholder="Enter Email">
+            </p>
+            <p>
+                <input type="password" id="pass" placeholder="Enter Password">
+            </p>
+            <p>
+                <input type="date" id="dob">
+            </p>
+            <p>
+                <button onclick="func()">Submit</button>
+            </p>
+        </div>
+        
+        <div id="data"></div>
+    </form>
+
+    <script>
+        function func(){
+            let name=document.getElementById("name").value
+            let email=document.getElementById("em").value
+            let pass=document.getElementById("pass").value
+            let dob=document.getElementById("dob").value
+
+            data.innerHTML=`${name} ${email} ${pass} ${dob}`
+        }
+    </script>
+    
+</body>
+</html>

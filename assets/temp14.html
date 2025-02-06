@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="calci">
+        <p>
+            <input type="number" id="t1" placeholder="Enter number 1">
+        </p>
+        <p>
+            <input type="number" id="t2" placeholder="Enter number 2">
+        </p>
+        <p>
+            <button onclick="cal()">Submit</button>
+        </p>
+        <div id="s1"></div>
+        <!-- <div id="s2"></div>
+        <div id="s3"></div>
+        <div id="s4"></div> -->
+    </div>
+
+    <script> 
+        function cal(){
+            let num1=Number(document.getElementById("t1").value);
+            let num2=Number(document.getElementById("t2").value);
+            let str= `${num1}+${num2}=${num1+num2}<br>`
+            str=str + `${num1}-${num2}=${num1-num2}<br>`
+            str=str + `${num1}*${num2}=${num1*num2}<br>`
+            str=str + `${num1}/${num2}=${num1/num2}<br>`
+            s1.innerHTML=str;
+
+
+
+            // s1.innerHTML=`${"Addition:"}${num1}+${num2}=${num1+num2}`
+            // s2.innerHTML=`${"Subtraction:"}${num1}-${num2}=${num1-num2}`
+            // s3.innerHTML=`${"Multiplication:"}${num1}*${num2}=${num1*num2}`
+            // s4.innerHTML=`${"Division:"}${num1}/${num2}=${num1/num2}`
+
+            // let sum=num1 + num2;
+            // let sub=num1 - num2;
+            // let mul=num1 *num2;
+            // let divide=num1/num2;
+
+            // document.write("Add ",sum);
+            // document.write("Subtract ",sub);
+            // document.write("Multiply ",mul);
+            // document.write("Divide ",divide);
+
+        }
+    </script>
+</body>
+</html>

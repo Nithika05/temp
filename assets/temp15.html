@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <p><input type="text" id="t1" placeholder="Enter name"></p>
+        <p><input type="text" id="t2" placeholder="Enter age"></p>
+        <p><input type="text" id="t3" placeholder="Enter qualification"></p>
+        <p><input type="text" id="t4" placeholder="Enter city"></p>
+        <button onclick="fun()">Submit</button>
+    </div>
+
+    <script>
+        function fun(){
+        let name=document.getElementById("t1").value;
+        let age=document.getElementById("t2").value;
+        let qua=document.getElementById("t3").value;
+        let city=document.getElementById("t4").value;
+
+        document.write("Name: ",name);
+        document.write(" | Age: ",age);
+        document.write(" | Qualification: ",qua);
+        document.write(" | City: ",city);
+        }
+
+    </script>
+</body>
+</html>
