@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-        function fun(){
-            let score=document.getElementById("marks").value
-            if(score>90){
-                msg.innerHTML = "A"
-            }
-            else if(score>80 && score<=90){
-                msg.innerHTML = "B"
-            }
-            else if(score>70 && score<=80){
-                msg.innerHTML = "C"
-            }
-            else if(score>60 && score<=70){
-                msg.innerHTML = "D"
-            }
-            else if(score>50 && score<=60){
-                msg.innerHTML = "E"
-            }
-            else {
-                msg.innerHTML = "FAIL"
-            }
-            
-            
+      function f1() {
+        let scr = document.getElementById("score").value;
+        if (scr>90){
+            msg.innerHTML = "Grade A"
         }
+        else if(scr > 70) {
+             msg.innerHTML = "Grade B"
+        }
+
+        else if(scr > 50) {
+             msg.innerHTML = "Grade C"
+        }
+        else {
+             msg.innerHTML = "Grade D"
+        }
+       
+      }
     </script>
-</head>
-<body>
-    <input type="number" id="marks">
-    <button onclick="fun()">Submit</button>
-    <hr>
+  </head>
+  <body>
+    <input type="number" id="score" placeholder="Enter Score" />
+    <button onclick="f1()">Submit</button>
+    <hr />
     <div id="msg"></div>
-</body>
+  </body>
 </html>
